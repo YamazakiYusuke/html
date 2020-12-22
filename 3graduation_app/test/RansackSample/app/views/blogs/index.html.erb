@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+<h1><%= link_to 'Let\'s Post Blog!', new_blog_path %></h1>
+
+<h1>Blogs</h1>
+
+<%= search_form_for @search do |f| %>
+  <%= f.label :content_cont, "contentで検索" %>
+  <%= f.search_field :content_cont %>
+
+  <div class="actions"><%= f.submit "検索" %></div>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @blogs.each do |blog| %>
+      <tr>
+        <td><%= blog.title %></td>
+        <td><%= blog.content %></td>
+        <td><%= link_to 'Show', blog %></td>
+        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
