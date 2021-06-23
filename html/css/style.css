@@ -1,0 +1,486 @@
+@charset "UTF-8";
+
+
+/* ========================================
+    全体設計
+========================================= */
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: #222222;
+  //background-color: #ffffff;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+
+.wrap {
+  width: 90%;
+  height: 100%;
+  //background-color: #000000;
+  margin: 0 auto;
+}
+
+/* ========================================
+    ヘッダー
+========================================= */
+header {
+  width: 70%;
+  height: 30%;
+  margin: 0 auto;
+  //background-color: #ff0073;
+}
+
+.main-logo img {
+  width: 63%;
+  height: 10%;
+  margin-left: 18%;
+  border-radius: 50%;
+}
+
+.main-logo p {
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 5%;
+}
+
+/*------------nav-----------------*/
+
+nav {
+  width: 100%;
+  height: 5%;
+  //background-color: darkgoldenrod;
+  margin-top: 8%;
+}
+
+nav a {
+  color: #ffffff;
+  font-size: 2.2em;
+  margin-right: 8.5%;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+nav a:first-child {
+  margin-left: 8%;
+}
+
+
+nav .home:hover {
+  color: #f4a460;
+  border-bottom: 3px solid #f4a460;
+}
+
+
+nav .about:hover {
+  color: #00ff8c;
+  border-bottom: 3px solid #00ff8c;
+}
+
+nav .recommend:hover {
+  color: #ff00f2 ;
+  border-bottom: 3px solid #ff00f2 ;
+}
+
+nav .sns:hover {
+  color:  #0073ff;
+  border-bottom: 3px solid #0073ff;
+}
+
+.side-nav {
+  width: 70%;
+  margin: 10% auto 0;
+}
+
+
+/* ========================================
+    コンテンツ
+========================================= */
+
+.contents {
+  width: 100%;
+  height: 25%;
+  margin: 10% auto;
+  //background-color: darkmagenta;
+  font-family: 'Josefin Sans', sans-serif;
+  
+}
+
+.description {
+  width: 65%;
+  height: 100%;
+  margin: auto;
+  //background-color: #f4a460;
+  padding: 3%;
+  box-sizing: border-box;
+  text-align: center;
+  border: 2px solid #f4a460;
+  border-radius: 5%;
+}
+
+.description h1 {
+  font-size: 3em;
+  color: #ffffff;
+  margin-bottom: 5%;
+}
+
+
+.home-p {
+  font-size: 1.2em;
+  color: #ffffff;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.description p span {
+  color: #ff00f2 ;
+  font-weight: bold;
+  border-bottom: 2px solid #ff00f2;
+}
+
+.about-p {
+  font-size: 1em;
+  color: #ffffff;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#about-span {
+  color: #00ff8c;
+  //font-weight: bold;
+  border-bottom: 2px solid #00ff8c;
+  font-size: 1.3em;
+}
+
+.p-youtube {
+  font-size: 1.5em;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+
+.p-youtube i {
+  margin-right: 2%;
+}
+
+.description mark {
+  background-color: #222222;
+  color: #00ff8c;
+  padding: 2px;
+}
+
+/* ========================================
+    メインビジュアル
+========================================= */
+
+.mv {
+  width: 65%;
+  height: 20%;
+  margin: 0 auto 10%;
+  //background-color: #ffffff;
+  
+}
+
+
+.mv iframe {
+  width: 100%;
+  border: 2px solid #f4a460;
+  border-radius: 5%;
+  opacity: 0.8;
+}
+
+.mv iframe:hover {
+  opacity: 1;
+}
+
+.mv-about {
+  width: 65%;
+  height: 20%;
+  margin: 0 auto;
+  //background-color: #ffffff;
+  background-image: url(../img/onetake.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid #00ff8c;
+  border-radius: 5%;
+}
+
+
+
+/* ========================================
+    サイドコンテンツ
+========================================= */
+.side-contents {
+  width: 100%;
+  height: 100%;
+  //background-color: #ff00f2;
+  //background: rgba(255,255,255,0.4);
+  font-family: 'Josefin Sans', sans-serif;
+  border-radius: 5%;
+}
+
+.side-contents p {
+  padding: 3%;
+}
+
+.side-contents .website {
+  //background-color: bisque;
+  text-align: center;
+}
+
+.side-contents .website a {
+  color: #ffffff;
+}
+
+.side-contents .website a:hover {
+  color: #f4a460;
+  //border-bottom: 4px solid #f4a460;
+}
+
+.side-contents .youtube {
+  //background-color: cadetblue;
+  margin-top: 30%;
+  text-align: center;
+}
+
+.side-contents .youtube a {
+  color: #ffffff;
+}
+
+.side-contents .youtube a:hover {
+  color: #ff0000;
+  //border-bottom: 4px solid #ff0000;
+}
+
+.side-contents p a {
+  font-size: 2em;
+  text-decoration: none;
+  color: #000000;
+}
+
+.side-contents p i {
+  //background-color: #ff8c00;
+  margin-right: 2%;
+  font-size: 1em;
+}
+
+
+/* ========================================
+    RECOMMENDコンテンツ
+========================================= */
+.contents-recommend {
+  width: 65%;
+  height: 55%;
+  margin: 10% auto;
+  //background-color: #ff00f2;
+  font-family: 'Josefin Sans', sans-serif;
+  border: 2px solid #ff00f2;
+  border-radius: 5%;
+  padding-bottom: 5%;
+}
+
+.contents-h1 {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  //background-color: #f4a460;
+  padding: 3%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.contents-h1 h1 {
+  font-size: 3em;
+  color: #ffffff;
+  margin-bottom: 10%;
+}
+
+.contents-rec-p {
+  width: 100%;
+  height: 85%;
+  //background-color: #ff00f2;
+}
+
+.contents-p-img {
+  width: 100%;
+  height: 20%;
+  box-sizing: border-box;
+  //background-color: #ff00f2; 
+}
+
+.contents-p-img .p-img1 {
+  width: 60%;
+  height: 100%;
+  //background-color: #000000;
+}
+
+
+.contents-p-img .img-left1 {
+  width: 30%;
+  //background-color: #ffffff;
+  background-image: url(../img/kitamura.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contents-p-img .img-left2 {
+  width: 30%;
+  //background-color: #ffffff;
+  background-image: url(../img/yoasobi.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contents-p-img .img-left3 {
+  width: 30%;
+  //background-color: #ffffff;
+  background-image: url(../img/yama.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contents-p-img .img-right1 {
+  width: 30%;
+  margin-left: 9%;
+  //background-color: #ffffff;
+  background-image: url(../img/lisa.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contents-p-img .img-right2 {
+  width: 30%;
+  margin-left: 9%;
+  //background-color: #ffffff;
+  background-image: url(../img/yuuri.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contents-p-img .p-img2 {
+  width: 60%;
+  height: 100%;
+  //background-color: #000000;
+}
+
+.img-left1:hover {
+  border-radius: 50%;
+}
+
+.img-left2:hover {
+  border-radius: 50%;
+}
+
+.img-left3:hover {
+  border-radius: 50%;
+}
+
+.img-right1:hover {
+  border-radius: 50%;
+}
+
+.img-right2:hover {
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+/* ========================================
+    SNSコンテンツ
+========================================= */
+
+.sns-contents {
+  width: 100%;
+  height: auto;
+  //background-color: #f4a460;
+}
+
+
+.sns-p{
+  color: #ffffff;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.sns-contents img {
+  width: 15%;
+  margin: 3%;
+  opacity: 0.7;
+ // background-color: #ffffff;
+  border: 1px solid #0073ff;
+  border-radius: 50%
+  
+}
+
+.sns-contents img:hover {
+  opacity: 1;
+}
+
+.mv-sns {
+  width: 100%;
+  //background-color: #000000;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  padding: 5%;
+  box-sizing: border-box;
+  border-radius: 5%;
+  border: 2px solid #0073ff;
+}
+
+.mv-sns h1 {
+  font-size: 2.5em;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.mv-sns h1 i {
+  margin: 2%;
+  color: #0073ff;
+}
+
+
+.mv-sns p {
+  font-size: 1.5em;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.mv-sns p span {
+  border-bottom: 2px solid #0073ff;
+}
+
+
+
+
+/* ========================================
+    フッター
+========================================= */
+
+footer {
+  width: 100%;
+  height: 3%;
+  background-color: #f4a460;
+  margin-top: 2%;
+  padding: 2% 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+footer .copyright  {
+  margin-left: 40%;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer img {
+  width: 5%;
+  padding-left: 30%;
+}
+
+
+
+
+
+
+
+
